@@ -1,0 +1,83 @@
+
+
+*{margin: 0;
+padding: 0;
+font-family: 'SangSangShinb7';
+font-size: 22px;
+
+}
+
+.wrap{
+  width: 400px;
+  height: 600px;
+  background-color: #e2f1f7;
+  border: 3px solid black;
+}
+
+
+
+ul {
+  list-style: none;
+  border: 3px solid black;
+  border-left: none;
+  border-right: none;
+  display: flex;  /* 추가된 부분 */
+  align-items: center;
+}
+
+section{
+  margin: 10px;
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+}
+
+.date{
+ display: inline-block;
+ padding: 5px;
+ box-sizing: border-box; 
+}
+
+
+.weather{
+  padding: 5px;
+  box-sizing: border-box; 
+  border-left: 3px solid black;
+}
+.weather > p{
+  display: inline-block;
+}
+
+.title{
+  display: flex;
+  padding: 10px;
+}
+.title::before{
+  content: "🍀";
+  margin-right: 4px;
+}
+.title>p{
+  width: 300px;
+  border-bottom: 1px solid black;
+}
+.img>img{
+  width: 100%;
+}
+.img{
+  padding: 10px;
+  border-bottom: 3px solid black;
+}
+
+table{
+  border: 3px solid black;
+  width: 380px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  
+}
+td{
+  border: 1px solid black;
+  padding: 2px;
+  text-align: center;
+  font-weight: 900;
+}
+

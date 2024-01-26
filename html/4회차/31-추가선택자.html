@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자 더 알아보기</title>
+    <style>
+        /* 
+            기호와 함께 사용하는 속성 선택자
+            * : 값의 포함 여부
+            ^ : 값의 시작 여부
+            $ : 값의 끝 여부
+        */
+        img[width $="0"]{
+            border: 5px dashed red;
+        }
+
+        p > em{
+            color: blue;
+        }
+        /*
+            형제 선택자는 뒤이어 등장하는 형제들을 대상으로 한다!
+        */
+
+        #sam ~ p {
+            color: orange;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <img src="images/city.jpg" width="120" alt="시티뷰">
+    <img src="images/city.jpg" width="120" >
+    <img src="images/city.jpg" width="120" id="sam">
+    <p>여기 시티뷰는 맛집 뷰 이며 , 인천에도 흔히 찾을수없는 곳입니다.</p>
+    <p>인천 시티뷰 많은 관심 부탁드립니다. </p>
+    <p>인천공항에서 영정도 <em>방향</em>으로 올라오시면 됩니다.</p>
+    <p>위치는 영정도 이며 시티뷰 맛집에 주변 관광지도 많습니다.</p>
+</body>
+</html>

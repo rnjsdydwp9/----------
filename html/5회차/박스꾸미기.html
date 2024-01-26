@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>박스 꾸미기</title>
+<style>      
+div {        
+    box-sizing: border-box;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;            
+    background: rgb(235,139,181);
+    background: radial-gradient(circle, 
+            rgb(117, 10, 56) 10%,
+            rgb(3, 43, 87) 100%);   
+    }
+
+box{   
+    font-family: 'Black Han Sans', sans-serif;
+    border-radius: 40%;
+    height: 50px;
+    width: 100px;
+    box-sizing: border-box; 
+    font-size: 35px;
+    color: rgba(99, 93, 100, 0.828);
+    background-color: rgba(238, 255, 0, 0.478);
+    background-clip: content-box;
+    text-align: center; 
+    line-height:50px;
+    }
+    </style>
+</head>
+<body>
+    <div>
+        <box>
+            OZ
+        </box>
+    </div>  
+</body>
+</html>
