@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .container {
+    @apply max-w-screen-lg;
   }
 }
